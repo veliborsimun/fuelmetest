@@ -1,0 +1,25 @@
+.inner-user-wrapper {
+    /* display: flex; */
+    width: 150px;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    padding: 6px;
+}
+
+.delete-user {
+    text-decoration: none;
+    background-color: #3C6CB4;
+    color: white;
+    font-weight: 100;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+    border-radius: 5px;
+    width: 150px;
+    height: 24px;
+    margin-left: 25px;
+}

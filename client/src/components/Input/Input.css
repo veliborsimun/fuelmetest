@@ -1,0 +1,93 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.userTable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    width: 1000px;
+}
+
+.inner-container {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+    width: 250px;
+}
+
+.firstTypeInput {
+    width: 150px;
+    border-radius: 6px;
+    padding: 3px;
+    margin-top: 10px;
+}
+
+.secondTypeInput {
+    width: 200px;
+    border-radius: 4px;
+    padding: 3px;
+    margin-top: 5px;
+}
+
+
+.addButton {
+    text-decoration: none;
+    background-color: #3C6CB4;
+    color: white;
+    font-weight: 100;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+    border-radius: 5px;
+    width: 150px;
+    margin-top: 24px;
+    height: 26px;
+}
+
+.userTable table{
+     width: 100%;
+     margin-top: 30px;
+     border-collapse: collapse;
+
+}
+.userTable table thead th{
+    background-color: white;
+    color: black;
+    padding: 10px;
+
+}
+.userTable table tbody td{
+     padding: 10px;
+     text-align: center ;
+}
+
+.actionsButtons button{
+    border: 0;
+    outline: none;
+    background: blue;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.userTable table tbody button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
