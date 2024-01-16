@@ -3,6 +3,7 @@
     import axios from 'axios';
     import "./User.css";
     const User = () => {
+      const [clicked, setClicked] = useState(false);
         const [users, setUsers] = useState([]);
         const deleteUser = async (userId) => {
             await axios.delete(`http://localhost:8080/api/delete/${userId}`)
@@ -33,11 +34,11 @@
             <div className='userTable'>
             <div className='inner-container'>
             <div key={user._id} className='user-container'>
-                <div className='inner-user-wrapper'>{user.firstName}</div>
-                <div className='inner-user-wrapper'>{user.lastName}</div>
-                <div className='inner-user-wrapper'>{user.street}</div>
-                <div className='inner-user-wrapper'>{user.city}</div>
-                <button className='delete-user' onClick={() => deleteUser(user._id)}>Remove</button>
+                <div className='inner-user-wrapper first-name'>{user.firstName}</div>
+                <div className='inner-user-wrapper last-name'>{user.lastName}</div>
+                <div className='inner-user-wrapper street'>{user.street}</div>
+                <div className='inner-user-wrapper city'>{user.city}</div>
+                <button className={clicked ? 'deleteUserWithBorder':'delete-user'} onClick={() => deleteUser(user._id)}>Remove</button>
                 </div>
             </div>
             </div>

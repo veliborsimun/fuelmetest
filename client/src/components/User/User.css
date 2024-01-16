@@ -21,5 +21,33 @@
     border-radius: 5px;
     width: 150px;
     height: 24px;
-    margin-left: 25px;
+    margin-left: 20px;
+    margin-right: -5px;
+    border: none;
 }
+
+.street {
+    margin-right: 50px;
+}
+
+.first-name {
+    margin-left: 10px;
+}
+
+.city {
+    margin-right: 30px;
+}
+
+.deleteUserWithBorder {
+        text-decoration: none;
+        background-color: #3C6CB4;
+        color: white;
+        font-weight: 100;
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+        border-radius: 5px;
+        width: 150px;
+        height: 24px;
+        margin-left: 20px;
+        margin-right: -5px;
+        border: 2px solid #1D7CE0;
+    }

@@ -4,17 +4,17 @@ import "./Input.css";
 
 const Input = () => {
      const [user, setUser] = useState();
-
+     const [clicked, setClicked] = useState(false);
      async function onSubmit(e) {
-       e.preventDefault()
+       e.preventDefault();
+       setClicked(true)
     if (!user.firstName || !user.lastName || !user.street || !user.city) {
         alert('All fields must be filled!');
+        setClicked(false)
         return;
       }
-    console.log("upada u submit")
-      await axios.post("http://localhost:8080/api/create", user).then((res) => {
-        console.log(res)
-      })
+      await axios.post("http://localhost:8080/api/create", user);
+      setClicked(false)
    }
 
     function onChange(value, property) {
@@ -43,7 +43,7 @@ const Input = () => {
               <input placeholder='City' className='secondTypeInput' onChange={(e) => onChange(e.target.value, "city")}/>
               </div>
               <div className='input-wrapper'> 
-                <button className='addButton' type='submit'>Insert</button>
+                <button className={clicked ? "addButtonWithBorder" : 'addButton'} type='submit'>Insert</button>
               </div>
             </div>
         </div>
