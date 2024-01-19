@@ -8,7 +8,7 @@ const Input = () => {
      async function onSubmit(e) {
        e.preventDefault();
        setClicked(true)
-    if (!user.firstName || !user.lastName || !user.street || !user.city) {
+    if (!user || !user.firstName || !user.lastName || !user.street || !user.city) {
         alert('All fields must be filled!');
         setClicked(false)
         return;
